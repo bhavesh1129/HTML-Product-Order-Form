@@ -1,0 +1,304 @@
+
+<html>
+<title>HTML Form</title>
+<body>
+
+<style>
+body
+{
+background-image: url('https://static.collectui.com/shots/3672858/the-advisor-large');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+
+textarea 
+{
+width:50%;
+height:150px;
+padding:12px 20px;
+box-sizing: border-box;
+border: 2px solid black;
+border-radius: 4px;
+background-color:#f8f8f8;
+font-size: 16px;
+resize:none;
+}
+
+input
+{
+box-sizing: border-box;
+border: 2px solid black;
+border-radius: 4px;
+}
+
+h1
+{
+background-color:rgba(68, 155, 255, 0.3);
+font-size:40px;
+color:white;
+text-align:center;
+padding:40px;
+border:3px solid black;
+}
+</style>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<h1>Product Order Form</h1>
+<h3 id="demo" style="text-align:center;color:white;border:2px solid black;background-color:rgba(68, 155, 255, 0.5)">This webpage is designed by <a href="https://m.facebook.com/Bhavesh1129?ref=bookmarks">Bhavesh Garg.</a>
+<br>And it is the interface of <i><u>Online Product Order Form</u></i> which we might seen while ordering the products through <u><i>Online Marketing Websites</i></u>.
+<br>As mentioned we have to submit the <i><u>HTML Form</u></i> as assignment.<br> So, I like to submit this <u><i>Online Order Form</i></u> and seriously it takes my days and nights to think over it and then work on it.
+<br>Hope you guys Like it.
+</h3>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello! <br> Here in my <u><i>HTML Form</i></u>, I had used <u><i>HTML,CSS,and JavaScript languages</i></u>.<br> Also I had used <u><i>onblur and onclick events</i></u> by the use of <u><i>JavaScript validationForm Function</i></u>."' 
+style="border:2px solid green;background-color:rgba(168, 155, 255, 0.5);"><b>Click Me!</b></button>
+
+<script type="text/javascript">
+window.alert("Hello! Welcome to my webpage.");
+function validateForm(){}
+function myFunction() 
+{
+document.getElementById("demo").innerHTML = "Hello World";
+}
+function myFun1() 
+{
+var x = document.getElementById("Fun1");
+x.value = x.value.toUpperCase();
+}
+function myFun2() 
+{
+var x = document.getElementById("Fun2");
+x.value = x.value.toUpperCase();
+}
+</script>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<form action="submitpage.html" onsubmit="return validateForm();" 
+style="border:4px solid black;padding:50px;font-size:20px;color:black;">
+<h2 style="text-align:center;">Personal Information</h2>
+<h3 style="border:2px solid green;background-color:rgba(18, 196, 255, 0.2);">
+<br><b>Full Name:<br></b>
+<input type="text" name="Fun1" placeholder="First Name" id="Fun1" onblur="myFun1()" required>
+&nbsp
+<input type="text" name="Fun2" placeholder="Last Name" id="Fun2" onblur="myFun2()"><br><br>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<b>E-mail:<br></b><input type="email" name="" placeholder="ex:myname@example.com"><br><br>
+<b>Mobile Number:<br>
+<select>
+<option value="+91">+91</option>
+<option value="+1">+1</option>
+<option value="+44">+44</option>
+<option value="+81">+81</option>
+</select>
+</b><input type="number" name="" placeholder="0123456789" required>
+<br><br>
+</h3>
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<b><h2 style="text-align:center;">Items in your Cart</h2></b>
+<h3 style="border:2px solid green;background-color:rgba(18, 196, 255, 0.2);">
+<br><a href="https://img0.junaroad.com/uiproducts/16957869/pri_175_p-1582713097.jpg"><img src="https://img0.junaroad.com/uiproducts/16957869/pri_175_p-1582713097.jpg"
+style="width:80px;height:80px;float:left;"></a>
+<input type="checkbox" id="HRX T-Shirt">
+<label for="HRX T-Shirt" style="color:black;"><mark>HRX T-Shirt</mark> <i>@Rs 599</i></label><br><br>
+&nbsp&nbsp&nbsp
+Quantity:&nbsp
+<select>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+&nbsp&nbsp&nbsp&nbsp&nbsp            
+Color:&nbsp
+<select>
+<option value="Black">Black</option>
+<option value="Blue">Blue</option>
+<option value="Red">Red</option>
+<option value="White">White</option>
+<option value="Yellow">Yellow</option>
+</select>
+&nbsp&nbsp&nbsp&nbsp&nbsp            
+Size:&nbsp
+<select>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+<option value="XL">XL</option>
+<option value="XXL">XXL</option>
+<option value="XXXL">XXXL</option>
+</select>
+<br><br><br>
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<a href="https://assets.ajio.com/medias/sys_master/root/h24/hf8/14650824097822/-473Wx593H-460520586-black-MODEL.jpg"><img src="https://assets.ajio.com/medias/sys_master/root/h24/hf8/14650824097822/-473Wx593H-460520586-black-MODEL.jpg"
+style="width:80px;height:80px;float:left;"></a>
+<input type="checkbox" id="Puma Sweatshirt">
+<label for="Puma Sweatshirt"><mark>Puma Sweatshirt</mark> <b>@Rs 2999</b></label><br><br>
+&nbsp&nbsp&nbsp
+Quantity:&nbsp
+<select>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+&nbsp&nbsp&nbsp&nbsp&nbsp            
+Color:&nbsp
+<select>
+<option value="Black">Black</option>
+<option value="Blue">Blue</option>
+<option value="Red">Red</option>
+<option value="White">White</option>
+<option value="Yellow">Yellow</option>
+</select>
+&nbsp&nbsp&nbsp&nbsp&nbsp            
+Size:&nbsp
+<select>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+<option value="XL">XL</option>
+<option value="XXL">XXL</option>
+<option value="XXXL">XXXL</option>
+</select>
+<br><br><br>
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<a href="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/371570/05/sv01/fnd/IND/fmt/png/RS-X3-Puzzle-Shoes"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/371570/05/sv01/fnd/IND/fmt/png/RS-X3-Puzzle-Shoes"
+style="width:80px;height:80px;float:left;"></a>
+<input type="checkbox" id="Puma Shoes">
+<label for="Puma Shoes"><mark>Puma Shoes</mark> <b>@Rs 5999</b></label><br><br>
+&nbsp&nbsp&nbsp
+Quantity:&nbsp
+<select>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>                                                              
+</select>
+&nbsp&nbsp&nbsp&nbsp&nbsp 
+Size:&nbsp
+<select>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="12">12</option>
+</select><br><br>
+</h3>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+<h2 style="text-align:center;"> Delivery Address</h2>
+<h3 style="border:2px solid green;background-color:rgba(18, 196, 255, 0.2);">
+<br><b>Billing Address:</b>
+<input type="text" name="" placeholder="Street Address Line 1" required>&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="" placeholder="Street Address Line 2"><br><br>
+<b>City:</b>
+<input type="text" name="" placeholder="City Name">
+&nbsp&nbsp&nbsp
+<b>Zip-Code:</b>
+<input type="text" name="" placeholder="Zip-Code" required><br><br>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<b>State/Province:</b>
+<input type="text" name="" placeholder="State" required>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<b>Country:</b>
+<select>
+<option value="India">India</option>
+<option value="Canada">Canada</option>
+<option value="USA">USA</option>
+<option value="Japan">Japan</option>
+</select><br><br>
+</h3>
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+<h2 style="text-align:center;">Additional Information</h2>
+<h3 style="border:2px solid green;background-color:rgba(18, 196, 255, 0.2);">
+<br><b>Is Shipping Address is same as Billing Address?</b><br>
+<input type="radio" id="Yes1" name="Yes1" value="Yes">
+<label for="Yes1">Yes</label><br>
+<input type="radio" id="No1" name="No1" value="No">
+<label for="No1">No</label><br><br>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<b>Send Gifts?</b><br>
+<input type="radio" id="Yes2" name="Yes2" value="Yes">
+<label for="Yes2">Yes</label><br>
+<input type="radio" id="No2" name="No2" value="No">
+<label for="No2">No</label><br><br>
+</h3>
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+<h3 style="border:2px solid green;background-color:rgba(18, 196, 255, 0.2);">
+<br><b>Special Instruction</b><i>(If Any)</i>:<br>
+<textarea>Write Here...</textarea><br><br><br>
+</h3>
+
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<input type="submit" value="Submit Order" style="border:2px solid white;background-color:black;color:white;">
+</form>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+<label style="color:black;border:2px solid white;background-color:rgba(255, 255, 127, 0.5);font-size:20px;text-align:center;">For any info feel free to contact me on:</label>
+<a href="https://m.facebook.com/Bhavesh1129?ref=bookmarks">
+<img src="https://www.facebook.com/images/fb_icon_325x325.png"
+alt="Facebook image"
+style="width:30px;height:30px;"></a>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////-->
+ 
+</body>
+</html>
